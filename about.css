@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+
+body {
+  margin: 0;
+  background: #d8130c;
+  color: #333;
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+}
+
+/* Navigation */
+header {
+  background: #222;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.home:hover {
+  border-bottom: 2px solid #ffcc00;
+}
+.projects:hover {
+  border-bottom: 2px solid #ffcc00;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* About section */
+.about-section {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(209, 217, 255, 0.966);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  gap: 20px;
+}
+
+.about-photo img {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-text h1 {
+  margin-top: 0;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #eee;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(25, 240, 6, 0.918);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.skills li:hover {
+  transform: scale(1.2);
+  background-color: rgb(157, 255, 0);
+  
+}
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
