@@ -4,7 +4,9 @@
 
 body {
   margin: 0;
-  background: #d8130c;
+
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5a); 
+  color: #fff;
   color: #333;
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
@@ -78,26 +80,41 @@ nav ul li a.active {
   margin-top: 0;
 }
 
-.skills {
-  list-style: none;
-  padding: 0;
-}
 
+.skills {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+/*d8*/
 .skills li {
+  font-weight: 700;
   background: #eee;
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(25, 240, 6, 0.918);
+  box-shadow: 0 0 5px rgba(25, 240, 6, 0.8);
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 150px;         
+  font-size: 14px;      
 }
+
+.skills li img {
+  width: 34px;          
+  height: 34px;
+  margin-left: 8px;
+}
+
 .skills li:hover {
-  transform: scale(1.2);
-  background-color: rgb(157, 255, 0);
-  
+  transform: scale(1.05);
+  background-color: #dfffd8;
 }
+
+
 /* Footer */
 .footer {
   background-color: #333;
